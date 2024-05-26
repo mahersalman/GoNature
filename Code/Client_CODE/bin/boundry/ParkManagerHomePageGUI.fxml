@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="761.0" prefWidth="739.0" style="-fx-background-color: #f8e2c1;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ParkManagerController">
+   <children>
+      <Button fx:id="genereagteReportBtn" layoutX="52.0" layoutY="258.0" mnemonicParsing="false" onAction="#genereteReport" prefHeight="63.0" prefWidth="189.0" style="-fx-background-color: #47964e;" text="Generete Reports" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font></Button>
+      <Button fx:id="LogoutBtn" layoutY="14.0" mnemonicParsing="false" onAction="#Logout" prefHeight="54.0" prefWidth="80.0" text="LogOut" />
+      <Button fx:id="updateBtn" layoutX="536.0" layoutY="583.0" mnemonicParsing="false" onAction="#updateSettings" prefHeight="96.0" prefWidth="189.0" style="-fx-background-color: #47964e;" text="Update &#10;Settings" textFill="WHITE">
+         <font>
+            <Font size="21.0" />
+         </font></Button>
+      <Label fx:id="parkNameLbl" alignment="CENTER" layoutX="100.0" layoutY="24.0" prefHeight="119.0" prefWidth="639.0" style="-fx-background-color: #3e7800;" text="-&#10;" textFill="WHITE">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="40.0" />
+         </font></Label>
+      <Label layoutX="98.0" layoutY="181.0" prefHeight="31.0" prefWidth="96.0" text="Report">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="25.0" />
+         </font>
+      </Label>
+      <TableView fx:id="updateSettingTable" layoutX="21.0" layoutY="529.0" prefHeight="189.0" prefWidth="503.0">
+         <columns>
+            <TableColumn fx:id="maxVisitorsCol" prefWidth="87.0" text="Max Visitors" />
+            <TableColumn fx:id="maxReservationsCol" prefWidth="121.0" text="Max Reservations" />
+            <TableColumn fx:id="averageVistingTimeCol" prefWidth="151.0" text="Average VisitingTime" />
+            <TableColumn fx:id="updateStatusCol" prefWidth="143.0" text="Status" />
+         </columns>
+      </TableView>
+      <Label layoutX="21.0" layoutY="478.0" prefHeight="31.0" prefWidth="370.0" text="update settings Requests :">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="25.0" />
+         </font>
+      </Label>
+      <Line endX="645.0" layoutX="97.0" layoutY="458.0" startX="-100.0" />
+      <Button fx:id="refereshUpdateTable" layoutX="21.0" layoutY="718.0" mnemonicParsing="false" onAction="#refereshUpdateRequestTable" prefHeight="25.0" prefWidth="156.0" text="Click To Referesh Table" />
+      <Line endX="-47.5" endY="-5.0" layoutX="374.0" layoutY="217.0" startX="-47.5" startY="240.5" />
+      <Label layoutX="428.0" layoutY="181.0" prefHeight="31.0" prefWidth="216.0" text="Park Vacancy">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="25.0" />
+         </font>
+      </Label>
+      <Button fx:id="checkVacancyBtn" layoutX="430.0" layoutY="258.0" mnemonicParsing="false" onAction="#checkVacancy" prefHeight="63.0" prefWidth="189.0" style="-fx-background-color: #47964e;" text="Check" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+      <Label layoutX="420.0" layoutY="354.0" prefHeight="27.0" prefWidth="254.0" text=" currently Visitors in park : ">
+         <font>
+            <Font name="Arial Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="visitorInParkLbl" alignment="CENTER" layoutX="494.0" layoutY="390.0" prefHeight="27.0" prefWidth="62.0" style="-fx-background-color: rgb(244,231,211);">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

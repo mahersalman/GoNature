@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="771.0" prefWidth="739.0" style="-fx-background-color: #f8e2c1;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.DepartmentMangerController">
+   <children>
+      <Button fx:id="reportsbtn" layoutX="82.0" layoutY="265.0" mnemonicParsing="false" onAction="#Reports" prefHeight="63.0" prefWidth="181.0" style="-fx-background-color: #47964e;" text="Report" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+      <Button fx:id="LogoutBtn" layoutX="1.0" layoutY="21.0" mnemonicParsing="false" onAction="#Logout" prefHeight="52.0" prefWidth="109.0" text="Logout" />
+      <Button fx:id="confirmBtn" layoutX="564.0" layoutY="543.0" mnemonicParsing="false" onAction="#confiormRequest" prefHeight="80.0" prefWidth="161.0" style="-fx-background-color: #47964e;" text="Confirm &#10;New Settings&#10;&#10;&#10;&#10;" textFill="WHITE">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Button>
+      <Label alignment="CENTER" layoutX="117.0" layoutY="7.0" prefHeight="119.0" prefWidth="620.0" style="-fx-background-color: #3e7800;" text="Department Manager" textFill="WHITE">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="40.0" />
+         </font>
+      </Label>
+      <Label layoutX="131.0" layoutY="185.0" prefHeight="31.0" prefWidth="100.0" text="Report ">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="25.0" />
+         </font>
+      </Label>
+      <Button fx:id="checkVacancy" layoutX="552.0" layoutY="265.0" mnemonicParsing="false" onAction="#checkVacancy" prefHeight="63.0" prefWidth="161.0" style="-fx-background-color: #47964e;" text="Check" textFill="WHITE">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Button>
+      <TableView fx:id="updateTable" layoutX="27.0" layoutY="537.0" prefHeight="189.0" prefWidth="503.0">
+         <columns>
+            <TableColumn fx:id="maxVisitorsCol" prefWidth="95.0" text="Max Visitors" />
+            <TableColumn fx:id="maxReservationCol" prefWidth="120.0" text="Max Reservations" />
+            <TableColumn fx:id="avgVisitingTimeCol" prefWidth="170.0" text="Average VisitingTime" />
+            <TableColumn fx:id="parkCol" prefWidth="117.0" text="Park" />
+         </columns>
+      </TableView>
+      <Label layoutX="27.0" layoutY="495.0" prefHeight="31.0" prefWidth="466.0" text="Requests Waiting For Answer :">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="25.0" />
+         </font>
+      </Label>
+      <Line endX="645.0" layoutX="101.0" layoutY="475.0" startX="-100.0" />
+      <Label layoutX="564.0" layoutY="488.0" prefHeight="46.0" prefWidth="161.0" text="* Select Request From Table &#10;Then Click Confirm\Declined" textFill="RED" />
+      <Button fx:id="DeclinedBtn" layoutX="564.0" layoutY="632.0" mnemonicParsing="false" onAction="#DeclinedRequest" prefHeight="80.0" prefWidth="161.0" style="-fx-background-color: red;" text="Declined&#10;New Settings&#10;&#10;&#10;&#10;" textFill="WHITE">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Button>
+      <Button fx:id="RefreshUpdateRequestTable" layoutX="27.0" layoutY="726.0" mnemonicParsing="false" onAction="#RefreshUpdateRequestTable" prefHeight="31.0" prefWidth="145.0" text="Refresh" />
+      <Line endX="-33.5" endY="-3.0" layoutX="361.0" layoutY="242.0" startX="-33.5" startY="233.5" />
+      <Label layoutX="442.0" layoutY="185.0" prefHeight="31.0" prefWidth="145.0" text="Vacancy">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="25.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="comboBoxParkName" layoutX="347.0" layoutY="282.0" prefHeight="25.0" prefWidth="161.0" promptText="Choose Park" />
+      <Label layoutX="403.0" layoutY="357.0" prefHeight="27.0" prefWidth="254.0" text=" currently Visitors in park : ">
+         <font>
+            <Font name="Arial Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="visitorInParkLbl" alignment="CENTER" layoutX="484.0" layoutY="410.0" prefHeight="27.0" prefWidth="62.0" style="-fx-background-color: rgb(244,231,211);">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="578.0" prefWidth="533.0" style="-fx-background-color: #f8e2c1;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.paymentController">
+   <children>
+      <Label layoutX="21.0" layoutY="194.0" text="Reservation Number :">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="reservationNumberLbl" layoutX="239.0" layoutY="194.0" text="-">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="visaNumber" layoutX="223.0" layoutY="300.0" prefHeight="25.0" prefWidth="232.0" />
+      <TextField fx:id="cvvTxt" layoutX="304.0" layoutY="376.0" />
+      <ComboBox fx:id="yearBox" layoutX="379.0" layoutY="339.0" prefHeight="25.0" prefWidth="74.0" />
+      <ComboBox fx:id="monthBox" layoutX="304.0" layoutY="339.0" prefHeight="25.0" prefWidth="66.0" />
+      <Label layoutX="317.0" layoutY="196.0" text="Price To Pay :">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="priceLbl" layoutX="453.0" layoutY="196.0" text="-">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="43.0" layoutY="257.0" text="Name On Card :">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="43.0" layoutY="299.0" text="Visa Number :">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="43.0" layoutY="338.0" text="Date :">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="43.0" layoutY="375.0" text="CVV  :">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="nameOnCard" layoutX="304.0" layoutY="257.0" prefHeight="25.0" prefWidth="149.0" />
+      <Button fx:id="payBtn" layoutX="61.0" layoutY="471.0" mnemonicParsing="false" onAction="#payment" prefHeight="65.0" prefWidth="412.0" style="-fx-background-color: #3e7800;" text="Pay">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Button>
+      <Label fx:id="noteLbl" layoutX="74.0" layoutY="421.0" prefHeight="30.0" prefWidth="377.0" text="-">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="-3.0" layoutY="34.0" prefHeight="131.0" prefWidth="533.0" style="-fx-background-color: #3e7800;" text="Payment" textFill="WHITE">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Button fx:id="backBtn" layoutX="1.0" layoutY="14.0" mnemonicParsing="false" onAction="#back" text="back" />
+   </children>
+</AnchorPane>

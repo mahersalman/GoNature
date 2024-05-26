@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="784.0" prefWidth="630.0" style="-fx-background-color: #f8e2c1;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.EntryWorkerController">
+   <children>
+      <Button fx:id="displayBillBtn1" layoutX="409.0" layoutY="448.0" mnemonicParsing="false" onAction="#displayBillReservations" prefHeight="66.0" prefWidth="188.0" style="-fx-background-color: #9787ff;" text="Display Bill">
+         <font>
+            <Font size="19.0" />
+         </font></Button>
+      <Button fx:id="entryBtn" layoutX="20.0" layoutY="448.0" onAction="#EntryWithReservation" prefHeight="66.0" prefWidth="149.0" style="-fx-background-color: #3e7800;" text="Entry Register" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Button fx:id="ExitBtn" layoutX="198.0" layoutY="448.0" mnemonicParsing="false" onAction="#ExitWithReservation" prefHeight="66.0" prefWidth="133.0" style="-fx-background-color: #d65e5e;" text="Exit Register" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <TextField fx:id="reservationID" layoutX="237.0" layoutY="394.0" onAction="#reservationNumberTxt" prefHeight="40.0" prefWidth="265.0" promptText="Reservation Number" />
+      <Label fx:id="txtLbl" layoutX="24.0" layoutY="402.0" prefHeight="19.0" prefWidth="213.0" text="Enter Reservation Number ">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+      <Label layoutX="10.0" layoutY="540.0" text=" Travelers Without Reservation">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="24.0" layoutY="590.0" text="Traveler  ID :">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="24.0" layoutY="630.0" text="Number Of Visitors : ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="travelerId" layoutX="204.0" layoutY="591.0" prefHeight="25.0" prefWidth="141.0" />
+      <Line endX="529.0" layoutX="96.0" layoutY="522.0" startX="-100.0" />
+      <Label alignment="CENTER" layoutX="-7.0" layoutY="14.0" prefHeight="131.0" prefWidth="639.0" style="-fx-background-color: #3e7800;" text="Welcome Entry Worker " textFill="WHITE">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="30.0" layoutY="347.0" text="Travelers With Reservation :">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="19.0" />
+         </font>
+      </Label>
+      <Button fx:id="entryBtn1" layoutX="20.0" layoutY="673.0" onAction="#EntryWithoutReservation" prefHeight="66.0" prefWidth="149.0" style="-fx-background-color: #3e7800;" text="Entry " textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="registerExitBtn1" layoutX="198.0" layoutY="673.0" mnemonicParsing="false" onAction="#ExitWithoutReservation" prefHeight="66.0" prefWidth="133.0" style="-fx-background-color: #d65e5e;" text="Exit" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Line endX="529.0" layoutX="96.0" layoutY="312.0" startX="-100.0" />
+      <Button fx:id="refreshParkVacancyBtn" layoutX="431.0" layoutY="204.0" mnemonicParsing="false" onAction="#refreshParkVacancy" prefHeight="95.0" prefWidth="178.0" style="-fx-background-color: #9787ff;" text="Refresh Park Vacancy">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Label layoutX="20.0" layoutY="246.0" prefHeight="27.0" prefWidth="254.0" text=" currently Visitors in park : ">
+         <font>
+            <Font name="Arial Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="visitorInParkLbl" alignment="CENTER" layoutX="284.0" layoutY="246.0" prefHeight="27.0" prefWidth="62.0" style="-fx-background-color: rgb(244,231,211);">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="displayBillBtn1" layoutX="411.0" layoutY="673.0" mnemonicParsing="false" onAction="#displayBillWithoutReservations" prefHeight="66.0" prefWidth="188.0" style="-fx-background-color: #9787ff;" text="Display Bill">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Button>
+      <ComboBox fx:id="numberOfVisitorsLbl" layoutX="203.0" layoutY="631.0" prefHeight="25.0" prefWidth="141.0" />
+      <Label fx:id="park_name" layoutX="159.0" layoutY="160.0" prefHeight="27.0" prefWidth="284.0" text="PARK : ">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Label>
+      <CheckBox fx:id="isGroup" layoutX="409.0" layoutY="588.0" mnemonicParsing="false" text="Group">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </CheckBox>
+      <Button fx:id="LogoutBtn" mnemonicParsing="false" onAction="#Logout" prefHeight="40.0" prefWidth="69.0" text="Logout" />
+   </children>
+</Pane>

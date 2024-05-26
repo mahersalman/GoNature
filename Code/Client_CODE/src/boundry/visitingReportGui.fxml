@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="642.0" prefWidth="883.0" style="-fx-background-color: rgb(244,231,211);" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.VisitingReportController">
+   <children>
+      <Label fx:id="Month" layoutX="385.0" layoutY="176.0" prefHeight="43.0" prefWidth="315.0" text="03/2024" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="29.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="-2.0" layoutY="14.0" prefHeight="141.0" prefWidth="883.0" style="-fx-background-color: #3e7800;" text="Visiting Report" textAlignment="CENTER" textFill="#bac3ba" textOverrun="CENTER_ELLIPSIS">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="50.0" />
+         </font>
+      </Label>
+      <Label layoutX="238.0" layoutY="175.0" text="Date : ">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="37.0" />
+         </font>
+      </Label>
+      <BarChart fx:id="StayTimeBar" layoutX="39.0" layoutY="236.0" prefHeight="372.0" prefWidth="805.0">
+         <xAxis>
+            <CategoryAxis label="Entry Time (hours)" side="BOTTOM" />
+         </xAxis>
+         <yAxis>
+            <NumberAxis animated="false" forceZeroInRange="false" label="Average Staying Time (hour)" lowerBound="1.0" minorTickCount="1" prefHeight="310.0" prefWidth="46.0" side="LEFT" tickLabelGap="1.0" upperBound="8.0" />
+         </yAxis>
+      </BarChart>
+   </children>
+</AnchorPane>

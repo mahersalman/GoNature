@@ -1,0 +1,8 @@
+maher_salman	0	service@mail.com	ServiceRepresenitive	service	password0	Ein_Gedi	0
+Emma_Watson	1	emma.watson@mail.com	ParkManager	parkm	password1	Banias_Nature	0
+Tom_Hanks	2	tom.hanks@mail.com	ParkManager	tom_hanks	password2	Gan_HaShlosha	0
+Jennifer_Lopez	3	jennifer.lopez@mail.com	ParkManager	jennifer_lopez	password3	Ein_Gedi	0
+Julia_Roberts	4	julia.roberts@mail.com	DepartmentManager	depm	password1	ALL	0
+Margot_Robbie	5	margot.robbie@mail.com	EntryWorker	margot_robbie	password11	Banias_Nature	0
+Chris_Hemsworth	6	chris.hemsworth@mail.com	EntryWorker	entry1	password1	Gan_HaShlosha	0
+Gal_Gadot	7	gal.gadot@mail.com	EntryWorker	gal_gadot	password13	Ein_Gedi	0

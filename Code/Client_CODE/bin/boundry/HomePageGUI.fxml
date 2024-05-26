@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="597.0" prefWidth="908.0" style="-fx-background-color: #f8e2c1;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.HomePageController">
+   <children>
+      <Label alignment="CENTER" prefHeight="141.0" prefWidth="754.0" style="-fx-background-color: #3e7800;" text="Welcome To Go Nature" textAlignment="CENTER" textFill="#bac3ba" textOverrun="CENTER_ELLIPSIS">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="50.0" />
+         </font>
+      </Label>
+      <Line endX="807.0" layoutX="100.0" layoutY="350.0" startX="-100.0" />
+      <Label layoutX="207.0" layoutY="224.0" text="Port :  ">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <TextField fx:id="portTxt" layoutX="353.0" layoutY="229.0" text="5555" />
+      <Button fx:id="connectBtn" layoutX="529.0" layoutY="227.0" mnemonicParsing="false" onAction="#connect" prefHeight="67.0" prefWidth="182.0" style="-fx-background-color: #47964e;" text="Connect" textFill="WHITE">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Button>
+      <Label layoutX="207.0" layoutY="261.0" prefWidth="127.0" text="Server Ip :">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <TextField fx:id="ipTxt" layoutX="353.0" layoutY="266.0" text="192.168.56.1" />
+      <Label fx:id="NoteLbl" layoutX="353.0" layoutY="301.0" prefHeight="30.0" prefWidth="362.0" textFill="RED">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="37.0" layoutY="177.0" text="Lets Connect To The Server :">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="23.0" />
+         </font>
+      </Label>
+      <AnchorPane fx:id="userPane" layoutX="7.0" layoutY="348.0" prefHeight="248.0" prefWidth="893.0">
+         <children>
+            <Label layoutX="23.0" layoutY="115.0" prefHeight="67.0" prefWidth="338.0" text="Do You work In Go Nature ?">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="27.0" />
+               </font>
+            </Label>
+            <Label layoutX="23.0" layoutY="34.0" prefHeight="67.0" prefWidth="338.0" text="Want To Travel With US ?">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="27.0" />
+               </font>
+            </Label>
+            <Button fx:id="empolyeeBtn" layoutX="515.0" layoutY="125.0" mnemonicParsing="false" onAction="#openEmployeeLoginGUI" prefHeight="48.0" prefWidth="281.0" style="-fx-background-color: #47964e;" text="Yes, I'am Employee" textFill="WHITE">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Button>
+            <Button fx:id="TravelerBtn" layoutX="515.0" layoutY="44.0" mnemonicParsing="false" onAction="#openTravelerLoginGUI" prefHeight="48.0" prefWidth="281.0" style="-fx-background-color: #47964e;" text="Yes,Lets Take a journey " textFill="WHITE">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

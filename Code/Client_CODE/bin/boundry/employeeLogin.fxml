@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="350.0" style="-fx-background-color: #f8e2c1;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.employeeLoginController">
+   <children>
+      <Label alignment="CENTER" layoutX="-3.0" layoutY="14.0" prefHeight="121.0" prefWidth="357.0" style="-fx-background-color: #3e7800;" text="Welcome To GoNature-Employee ">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="28.0" layoutY="177.0" text="Username:">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="30.0" layoutY="218.0" text="Password:">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="noteLbl" layoutX="32.0" layoutY="254.0" prefHeight="17.0" prefWidth="275.0" textFill="RED" />
+      <TextField fx:id="usernameTxt" layoutX="154.0" layoutY="176.0" />
+      <TextField fx:id="passwordTxt" layoutX="154.0" layoutY="217.0" />
+      <Button fx:id="loginBtn" layoutX="30.0" layoutY="282.0" mnemonicParsing="false" onAction="#login" prefHeight="90.0" prefWidth="275.0" style="-fx-background-color: #47964e;" text="Login" textFill="WHITE">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Button>
+      <Button fx:id="backBtn" layoutX="6.0" layoutY="14.0" mnemonicParsing="false" onAction="#back" text="back" />
+   </children>
+</AnchorPane>

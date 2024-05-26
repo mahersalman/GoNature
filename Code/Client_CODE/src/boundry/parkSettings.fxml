@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="456.0" prefWidth="600.0" style="-fx-background-color: #f8e2c1;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ParkSettingsController">
+   <children>
+      <Label fx:id="parkNameLbl" alignment="CENTER" layoutY="14.0" prefHeight="119.0" prefWidth="433.0" style="-fx-background-color: #3e7800;" text="Park Settings  " textFill="WHITE">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="40.0" />
+         </font>
+      </Label>
+      <Label layoutX="82.0" layoutY="248.0" text="Max Reservation  :">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="noteLbl" layoutX="52.0" layoutY="319.0" prefHeight="30.0" prefWidth="496.0">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="82.0" layoutY="209.0" prefHeight="21.0" prefWidth="104.0" text="Max Visitors :">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="82.0" layoutY="283.0" text="Average Staying Time :">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="parName" layoutX="82.0" layoutY="144.0" text="Park Name :">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Label>
+      <Button fx:id="updateBtn" layoutX="82.0" layoutY="349.0" mnemonicParsing="false" onAction="#updateSettings" prefHeight="89.0" prefWidth="439.0" style="-fx-background-color: #3e7800;" text="Update" textFill="WHITE">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Button>
+      <TextField fx:id="maxVisitorsTxt" layoutX="257.0" layoutY="207.0" prefHeight="25.0" prefWidth="258.0" />
+      <TextField fx:id="MaxReservationTxt" layoutX="257.0" layoutY="246.0" prefHeight="25.0" prefWidth="258.0" />
+      <TextField fx:id="StayingTimeTxt" layoutX="257.0" layoutY="281.0" prefHeight="25.0" prefWidth="258.0" />
+      <Button fx:id="backBtn" layoutY="-1.0" mnemonicParsing="false" onAction="#backBtn" text="Back" />
+   </children>
+</AnchorPane>

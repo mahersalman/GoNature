@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="635.0" prefWidth="762.0" style="-fx-background-color: #f8e2c1;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.UnavailableOrderOption">
+   <children>
+      <Button fx:id="ExitOrderOptionsBtn" layoutX="548.0" layoutY="117.0" mnemonicParsing="false" text="X" />
+      <Button fx:id="BackBtn" layoutY="4.0" mnemonicParsing="false" onAction="#back" text="Back" />
+      <Label alignment="CENTER" layoutY="35.0" prefHeight="141.0" prefWidth="627.0" style="-fx-background-color: #3e7800;" text="Reservations &#10;Another Options" textAlignment="CENTER" textFill="#bac3ba" textOverrun="CENTER_ELLIPSIS">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="50.0" />
+         </font>
+      </Label>
+      <Pane fx:id="PaneOptions" layoutY="177.0" prefHeight="458.0" prefWidth="762.0">
+         <children>
+            <Label layoutX="36.0" layoutY="26.0" prefHeight="88.0" prefWidth="654.0" text="We Are Sorry That The Date You Chosse Not Available right now .&#10;However We Have Anoter options to you : ">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="19.0" />
+               </font>
+            </Label>
+            <TableView fx:id="DateTable" layoutX="43.0" layoutY="114.0" prefHeight="231.0" prefWidth="276.0">
+              <columns>
+                <TableColumn fx:id="DateCol" prefWidth="127.0" text="date" />
+                <TableColumn fx:id="hourCol" prefWidth="148.0" text="hour" />
+              </columns>
+            </TableView>
+            <Button fx:id="ShowAvailableDateTableBtn" layoutX="43.0" layoutY="368.0" mnemonicParsing="false" onAction="#chooseAvailableDate" prefHeight="54.0" prefWidth="276.0" style="-fx-background-color: #3e78;" text="Pick Another Date" textFill="#170101">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Button>
+            <Button fx:id="EnterWaitingListBtn" layoutX="443.0" layoutY="113.0" mnemonicParsing="false" onAction="#enterWaitList" prefHeight="312.0" prefWidth="276.0" style="-fx-background-color: #3e78;" text="Enter waiting list">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Button>
+            <Line endX="-54.0" endY="-116.0" layoutX="414.0" layoutY="230.0" startX="-54.0" startY="230.0" />
+            <Pane fx:id="paneLabel" layoutY="1.0" prefHeight="458.0" prefWidth="762.0">
+               <children>
+                  <Label fx:id="NoteLbl" alignment="TOP_LEFT" layoutX="119.0" layoutY="78.0" prefHeight="303.0" prefWidth="479.0" textFill="#ae7491">
+                     <font>
+                        <Font size="33.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   </children>
+</Pane>

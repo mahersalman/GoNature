@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="861.0" prefWidth="1118.0" style="-fx-background-color: #f8e2c1;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.UserHomePageController">
+   <children>
+      <Button id="paymentbtn" fx:id="paymentBtn" layoutX="340.0" layoutY="734.0" mnemonicParsing="false" onAction="#payment" prefHeight="113.0" prefWidth="124.0" style="-fx-background-color: #0d4789;" text="Payment" textFill="WHITE">
+         <font>
+            <Font size="22.0" />
+         </font></Button>
+      <Button id="dobtn" fx:id="create_reservationBtn" layoutX="827.0" layoutY="734.0" mnemonicParsing="false" onAction="#create_reservation" prefHeight="113.0" prefWidth="266.0" style="-fx-background-color: #3e7800;" text="Create new Reservation" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font></Button>
+      <TableView fx:id="reservationsTable" layoutX="18.0" layoutY="298.0" prefHeight="419.0" prefWidth="1079.0">
+         <columns>
+            <TableColumn fx:id="reservationId" prefWidth="99.00003051757812" text="reservation_ID" />
+            <TableColumn id="time_tableColumn" fx:id="visitDate" minWidth="5.0" prefWidth="97.0" text="Date" />
+            <TableColumn id="numOfVisitors_tableColumn" fx:id="visitHour" minWidth="0.0" prefWidth="81.0" text="Hour" />
+            <TableColumn id="priceOrder_tableColumn" fx:id="numberOfVisitors" minWidth="5.0" prefWidth="144.0" text="Visitors_Number" />
+            <TableColumn id="statusOrder_tableColumn" fx:id="park_name" minWidth="5.0" prefWidth="148.0" text="Park" />
+            <TableColumn fx:id="email" prefWidth="159.0" text="email" />
+            <TableColumn fx:id="phoneNumber" prefWidth="143.0" text="Phone" />
+            <TableColumn fx:id="isGroup" prefWidth="63.0" text="isGroup" />
+            <TableColumn fx:id="status" prefWidth="143.0" text="Status" />
+         </columns>
+      </TableView>
+      <Button fx:id="decisionBtn" layoutX="488.0" layoutY="734.0" mnemonicParsing="false" onAction="#decision" prefHeight="113.0" prefWidth="315.0" style="-fx-background-color: #0d4789;" text="Cancel/Approve &#10;&#10;" textFill="WHITE">
+         <font>
+            <Font size="21.0" />
+         </font></Button>
+      <Label fx:id="pageLbl" alignment="CENTER" layoutX="-5.0" layoutY="10.0" prefHeight="141.0" prefWidth="1125.0" style="-fx-background-color: #3e7800;" text="Welcome To Go Nature &#10;ID :&#10;" textAlignment="CENTER" textFill="#bac3ba" textOverrun="CENTER_ELLIPSIS">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="50.0" />
+         </font>
+      </Label>
+      <Button fx:id="logoutBtn" layoutX="33.0" layoutY="734.0" mnemonicParsing="false" onAction="#logout" prefHeight="113.0" prefWidth="124.0" style="-fx-background-color: #f45a5a;" text="Logout">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Button>
+      <TextArea fx:id="notificationArea" layoutX="182.0" layoutY="170.0" prefHeight="124.0" prefWidth="775.0" />
+      <Label layoutX="14.0" layoutY="178.0" text="notification :">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Button fx:id="RefreshNotificationBtn" layoutX="968.0" layoutY="175.0" mnemonicParsing="false" onAction="#RefreshNotification" prefHeight="51.0" prefWidth="137.0" text="Refresh &#10;Messages" />
+      <Button fx:id="RefreshReservation" layoutX="968.0" layoutY="232.0" mnemonicParsing="false" onAction="#RefreshReservation" prefHeight="51.0" prefWidth="137.0" text="Refresh &#10;Reservations&#10;" />
+   </children>
+</Pane>

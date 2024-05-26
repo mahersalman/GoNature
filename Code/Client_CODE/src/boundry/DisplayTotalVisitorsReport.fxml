@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="558.0" prefWidth="661.0" style="-fx-background-color: #f8e2c1;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.DisplayTotalVisitorsReport">
+   <children>
+      <PieChart fx:id="Piechart" layoutX="129.0" layoutY="167.0" prefHeight="363.0" prefWidth="405.0" />
+      <Label fx:id="parkNameLbl" alignment="CENTER" layoutX="1.0" layoutY="24.0" prefHeight="119.0" prefWidth="661.0" style="-fx-background-color: #3e7800;" text="TotalVisitors Report" textFill="WHITE">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="40.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>
